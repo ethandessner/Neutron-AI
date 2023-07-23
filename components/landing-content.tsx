@@ -21,7 +21,6 @@ const testimonials = [
     title: "Investment Banker",
     description: "This is the best application I've used!",
   },
-
   {
     name: "Laina",
     avatar: "L",

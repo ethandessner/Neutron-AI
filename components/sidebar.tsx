@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { Herr_Von_Muellerhoff, Montserrat } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { FreeCounter } from "@/components/ui/free-counter";
@@ -14,7 +14,6 @@ import {
   Settings,
   VideoIcon,
 } from "lucide-react";
-import { ROUTES_MANIFEST } from "next/dist/shared/lib/constants";
 
 const monsterrat = Montserrat({ weight: "600", subsets: ["latin"] });
 
@@ -86,7 +85,7 @@ const Sidebar = ({ apiLimitCount = 0, isPro = false }: SidebarProps) => {
               href={route.href}
               key={route.href}
               className={cn(
-                "text-sm group flex p-3 w-full justify-start font-medium curosr-pointer hover:text-white hover:bg-white/10 rounded-lg transition",
+                "text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lg transition",
                 pathname === route.href
                   ? "text-white bg-white/10"
                   : "text-zinc-400"
